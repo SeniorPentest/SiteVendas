@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add reveal class to cards and sections
     const targets = document.querySelectorAll(
         '.snack-card, .value-card, .program-card, .plan-card, ' +
-        '.channel-card, .loyalty-text, .loyalty-visual, ' +
+        '.channel-card, .loyalty-text, .loyalty-visual, .testimonial-card, ' +
         '.compliance-text, .compliance-seals, ' +
         '.contact-info, .contact-form, .section-header'
     );
