@@ -9,6 +9,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
+        .testimonials {
+            padding: 96px 0;
+            background: radial-gradient(circle at 20% 20%, rgba(255, 234, 224, 0.7), transparent 35%), radial-gradient(circle at 80% 0%, rgba(255, 210, 222, 0.5), transparent 32%), linear-gradient(135deg, #fefefe 0%, #f6f4fb 100%);
+        }
+
+        .testimonials .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 48px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 20px 60px rgba(15, 3, 9, 0.08), 0 8px 20px rgba(15, 3, 9, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .testimonial-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f3eefc;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            color: #1f1f26;
+            margin: 0;
+        }
+
+        .testimonial-role {
+            color: #6f7080;
+            font-size: 14px;
+            margin: 2px 0 0 0;
+        }
+
+        .testimonial-stars {
+            color: #f6b100;
+            letter-spacing: 3px;
+            font-size: 16px;
+        }
+
+        .testimonial-body {
+            color: #33333d;
+            line-height: 1.6;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .testimonial-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #8a8b98;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .testimonials {
+                padding: 72px 0;
+            }
+
+            .testimonial-card {
+                padding: 20px;
+            }
+        }
+
         .whatsapp-fab {
             position: fixed;
             right: 22px;
@@ -393,6 +479,65 @@
                     </ul>
                     <a href="#contact" class="btn btn-primary">Assinar Diamante</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         TESTIMONIALS
+    ========================= -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Depoimentos</span>
+                <h2>Histórias de <span class="text-accent">quem já provou</span></h2>
+                <p class="section-desc">Clientes reais contando como os snacks funcionais da VieFive ajudam a manter o foco e a rotina de estudos em dia.</p>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=12" alt="Foto de João Vieira">
+                        <div>
+                            <p class="testimonial-name">João Vieira</p>
+                            <p class="testimonial-role">Aluno de Engenharia</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+                    <p class="testimonial-body">“As barras de guaraná &amp; cacau viraram meu combustível oficial para as semanas de provas. Energia constante sem aquele pico de açúcar que derruba depois.”</p>
+                    <div class="testimonial-meta">
+                        <span>Cliente nível Ouro</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=32" alt="Foto de Camila Rocha">
+                        <div>
+                            <p class="testimonial-name">Camila Rocha</p>
+                            <p class="testimonial-role">Criadora de Conteúdo</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+                    <p class="testimonial-body">“Gravar, editar e estudar ao mesmo tempo é puxado. As barras da VieFive são práticas e saudáveis — não perco tempo e ainda sinto o cérebro ligado.”</p>
+                    <div class="testimonial-meta">
+                        <span>Assinante Diamante</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=45" alt="Foto de Rodrigo Alves">
+                        <div>
+                            <p class="testimonial-name">Rodrigo Alves</p>
+                            <p class="testimonial-role">Coordenador de Curso</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+                    <p class="testimonial-body">“Recomendo para minha turma: ingredientes limpos, rótulo transparente e muita praticidade. Ajuda os alunos a manterem performance sem abrir mão da saúde.”</p>
+                    <div class="testimonial-meta">
+                        <span>Fã das barras naturais</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
