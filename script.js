@@ -1,4 +1,3 @@
-
 // Carrossel com autoplay (Snacks e Planos)
 function initCarousel(containerSelector) {
     const carouselWrapper = document.querySelector(containerSelector);
